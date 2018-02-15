@@ -16,38 +16,26 @@
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 30px;
-    margin-top: 15px;
+    font-size: 20px;
+    margin-top: 25px;
     margin-left: 20px;
     text-decoration: none;
 }
 
-.searchbar_container {
+.site_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    padding-top: 22px;
+    padding-left: 30px;
+    padding-bottom: 22px
+}
+
+
+.site_title_container {
     width: 75vw;
     height: 100%;
-}
-
-.searchbar_input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #8bb3db;
-    margin-top: 20px;
-    margin-left: 30px;
-    width: 50%;
-    height: 20px;
-    color: white;
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 3px;
-}
-
-.searchbar_input::placeholder {
-    color: #8bb3db
-}
-
-.search_input:focus {
-    border-bottom: 1px solid white;
-    outline: none !important
 }
 
 .btn_connect {
@@ -249,8 +237,6 @@
     transform: translateX(-35%);
 }
 
-
-
 .button_submit_reply {
     text-decoration: none;
     color:white ;
@@ -363,11 +349,38 @@
     border: none;
 }
 
-.btn_submit:hover {
+.btn_topic_submit:hover {
     background-color: #3893dd;
 }
 
-.btn_submit:focus {
+.btn_topic_submit:focus {
+    outline: none !important;
+    background-color: #348bd2;
+    border: none !important;
+}
+
+.button_connect {
+    background-color: #42A5F5;
+    font-family: montserrat;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    display: block;
+    width: 150px;
+    height: 50px !important;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: 0.2s ease;
+    border: none;
+}
+
+.btn_connect:hover {
+    background-color: #3893dd;
+}
+
+.btn_connect:focus {
     outline: none !important;
     background-color: #348bd2;
     border: none !important;

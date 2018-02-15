@@ -48,9 +48,7 @@ if(isset($_POST['submit'])){
         $doadd->execute();
         $newID = $conn->lastInsertID();
         header('Location: #'. $newID .'');
-    } else {
-        echo "sa march po";
-    }  
+    }
 }
 ?>
 

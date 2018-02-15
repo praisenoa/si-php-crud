@@ -14,6 +14,8 @@
           ORDER BY
           `topics`.`date`
           DESC
+          LIMIT
+          5;
           ";
     $allTopicsQuery = $conn->prepare($query_topics);
     $allTopicsQuery->execute();
