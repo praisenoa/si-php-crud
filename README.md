@@ -260,3 +260,14 @@ COMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 ```
+
+### Réinitialisation des AUTO_INCREMENT
+
+```SQL
+ALTER TABLE categories AUTO_INCREMENT = 1
+ALTER TABLE topics AUTO_INCREMENT = 1
+ALTER TABLE replies AUTO_INCREMENT = 1
+
+// Entrer ligne par ligne
+
+```
