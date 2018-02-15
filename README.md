@@ -5,7 +5,7 @@ ChatRoom est un forum dédié aux personnes voulant communiquer et partager au s
 
 ## Sitemap
 
-![Texte alternatif](http://image.noelshack.com/fichiers/2018/07/4/1518695767-sitemap-chatroom.png)
+![Sitemap](http://image.noelshack.com/fichiers/2018/07/4/1518695767-sitemap-chatroom.png)
 
 ## Base de données
 
