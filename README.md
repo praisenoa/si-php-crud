@@ -29,16 +29,16 @@ ChatRoom est un forum dédié aux personnes voulant communiquer et partager au s
 | --- | --- | --- |
 | topic_id_ | int(11) | AUTO-INCREMENT |
 | category_id_ | int(11) | |
-| subjec_ | varchar(255) | |
+| subject | varchar(255) | |
 | date | datetime | CURRENTTIMESTAMP |
 
 #### replies
 
 | Nom | Type | Extra |
 | --- | --- | --- |
-|reply_id_ | int(11) | AUTO-INCREMENT |
-|topic_id_ | int(11) |  |
-|category_id_ | int(11) | |
+| reply_id_ | int(11) | AUTO-INCREMENT |
+| topic_id_ | int(11) |  |
+| category_id_ | int(11) | |
 | content | text | |
 | date | datetime | CURRENTTIMESTAMP |
 | author | varchar(255) | |
@@ -47,11 +47,11 @@ ChatRoom est un forum dédié aux personnes voulant communiquer et partager au s
 
 | Nom | Type | Extra |
 | --- | --- | --- |
-|id | int(11) | AUTO-INCREMENT |
-|username | varchar(255) |  |
-|email | varchar(255) | |
+| id | int(11) | AUTO-INCREMENT |
+| username | varchar(255) |  |
+| email | varchar(255) | |
 | password | varchar(255) | |
-| admin | tinyint(1) | . |
+| admin | tinyint(1) |  |
 
 ## Fonctionnement du site
 
