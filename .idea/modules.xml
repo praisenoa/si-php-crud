@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/PhpstormProjects/.idea/PhpstormProjects.iml" filepath="$USER_HOME$/PhpstormProjects/.idea/PhpstormProjects.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/Putain_je_peux_enfin_aller_dormir/.idea/Putain_je_peux_enfin_aller_dormir.iml" filepath="$USER_HOME$/Downloads/Putain_je_peux_enfin_aller_dormir/.idea/Putain_je_peux_enfin_aller_dormir.iml" />
+      <module fileurl="file://$USER_HOME$/PhpstormProjects/semaine_intensive/.idea/semaine_intensive.iml" filepath="$USER_HOME$/PhpstormProjects/semaine_intensive/.idea/semaine_intensive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/si-php-crud.iml" filepath="$PROJECT_DIR$/.idea/si-php-crud.iml" />
+      <module fileurl="file://$USER_HOME$/Sites/PhpstormProjects/testPHP/.idea/testPHP.iml" filepath="$USER_HOME$/Sites/PhpstormProjects/testPHP/.idea/testPHP.iml" />
+    </modules>
+  </component>
+</project>
