@@ -176,14 +176,6 @@ CREATE TABLE IF NOT EXISTS `categories` (
   PRIMARY KEY (`category_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
---
--- Déchargement des données de la table `categories`
---
-
-INSERT INTO `categories` (`category_id`, `name`) VALUES
-(1, 'Categorie tro bien'),
-(3, 'La catÃ©gorie du bonheur'),
-(4, 'CatÃ©gorie 3');
 
 -- --------------------------------------------------------
 
@@ -204,19 +196,6 @@ CREATE TABLE IF NOT EXISTS `replies` (
   KEY `repliesTOtopics` (`topic_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=latin1;
 
---
--- Déchargement des données de la table `replies`
---
-
-INSERT INTO `replies` (`reply_id`, `topic_id`, `category_id`, `content`, `date`, `author`) VALUES
-(81, 6, NULL, 'Le commentaire du bonheur', '2018-02-15 01:57:20', 'Gontran'),
-(82, 7, NULL, 'OUI OUI OUI LA FAMILLE', '2018-02-15 01:59:03', 'Anonymous'),
-(83, 6, NULL, 'trop bien', '2018-02-15 02:00:03', 'Anonymous'),
-(84, 8, NULL, 'test', '2018-02-15 10:38:12', 'Anonymous'),
-(85, 6, NULL, 'bfhhf', '2018-02-15 10:38:47', 'Anonymous'),
-(86, 9, NULL, 'oui ououo oxpuviomdfhgitvr', '2018-02-15 12:20:59', 'Anonymous'),
-(87, 10, NULL, 'hfduigiodf', '2018-02-15 12:23:43', 'Anonymous'),
-(88, 6, NULL, 'olalaa', '2018-02-15 13:02:08', 'pignouf');
 
 -- --------------------------------------------------------
 
@@ -234,16 +213,6 @@ CREATE TABLE IF NOT EXISTS `topics` (
   KEY `topicsTOcategoriesID` (`category_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
---
--- Déchargement des données de la table `topics`
---
-
-INSERT INTO `topics` (`topic_id`, `category_id`, `subject`, `date`) VALUES
-(6, 3, 'Le topic du bonheur', '2018-02-15 01:57:20'),
-(7, 3, 'mouss diouf', '2018-02-15 01:59:03'),
-(8, 1, 'test', '2018-02-15 10:38:12'),
-(9, 1, 'Bonjour', '2018-02-15 12:20:59'),
-(10, 4, 'ildiugdiofo', '2018-02-15 12:23:43');
 
 -- --------------------------------------------------------
 
