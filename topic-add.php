@@ -33,17 +33,23 @@ if(isset($_POST['submit'])){
 
 }
 ?>
+<section class="container">
+    <?php include('navigation.php'); ?>
 
-    <div class="container">
-        <h1 class="createTopic">Create topic</h1>
-        <form class="topicAddForm" action="" method="post">
-            <input type="text" id="author" name="author" placeholder="Votre pseudo" value="Anonymous">
-            <input type="text" id="subject" name="subject" placeholder="Titre du topic...">
-            <textarea id="content" name="content" id="" cols="30" rows="10" placeholder="Message..."></textarea>
-            <button name="submit" type="submit">Envoyer</button>
-        </form>
-        <a href="./" style="margin-top: 100px;" class="btnAddTopic">Retour</a>
+
+    <form action="" method="post">
+        <h1 class="section_title">Créer une nouvelle discussion</h1>
+        <input class="topic_add_input" type="text" id="author" name="author" placeholder="Votre pseudo" value="Anonymous">
+        <input class="topic_add_input" type="text" id="subject" name="subject" placeholder="Titre de la discussion">
+        <textarea class="topic_add_text" id="content" name="content" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+        <div class="buttons_topic_container">
+            <button class="button_topic_return"><a href="./" style="text-decoration: none; color:black">Retour</a></button>
+            <button class="button_topic_submit" name="submit" type="submit">Valider</button>
+        </div>
+    </form>
+
     </div>
+</section>
 
 <?php include('layouts/footer.php');?>
 

@@ -22,12 +22,11 @@ $category_name = $row['name'];
 
 
 ?>
-<section class="container">
-    <?php include('navigation.php'); ?>
+    <section class="container">
+<?php include('navigation.php'); ?>
     <section class="discussions_container">
-
-        <h3 class="title_category"><?= $category_name ?></h3>
-        <hr class="hr">
+        <h3 class="section_title"><?= $category_name ?></h3>
+        <hr class="main_line">
         <?php
         $query_topics = "SELECT
           `topics`.`topic_id`,
@@ -48,10 +47,17 @@ $category_name = $row['name'];
 
             if ($category_id === $topicCategoryId) {
                 ?>
-                <a href="topic.php?topic=<?= $topicId ?>" class="discussion_a">
-                    <div class="discussion_box">
-                        <h3 class="title_discussion"><?= $topicSubject ?></h3>
-                        <hr class="hr_replies">
+                <a href="topic.php?topic=<?= $topicId ?>" class="links">
+                    <div class="item_box">
+                        <h3 class="item_text"><?= $topicSubject ?></h3>
+                        <?php
+                        $timestamp = strtotime($row["date"]);
+                        $mois_fr = Array("", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre");
+                        list($nom_jour, $jour, $mois, $annee, $heure, $minute, $seconde) = explode('/', date("w/d/n/Y/H/i/s", $timestamp)); ?>
+                        <p class="additional_info_title">Date de création :</p>
+                        <p class="additional_info_detail"><?= $jour . ' ' . $mois_fr[$mois] . ' ' . $annee . ' ' ?>
+                            à<?= ' ' . $heure . ':' . $minute?></p>
+                        <hr class="secondary_line">
                     </div>
                 </a>
                 <?php
@@ -60,7 +66,10 @@ $category_name = $row['name'];
         }
 
         ?>
-        <a href="topic-add.php?category=<?=$category_id?>" class="btnAddTopic">Ajouter un topic</a>
+        <div class="btn_container">
+            <a href="topic-add.php?category=<?=$category_id?>" class="button_action">Créer une discussion</a>
+        </div>
+    </section>
     </section>
 
-<?php include('layouts/footer.php')?>
+<?php include('layouts/footer.php') ?>

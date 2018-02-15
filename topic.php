@@ -54,14 +54,28 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-        <section class="container">
-            <?php include('navigation.php')?>
-            <section class="discussions_container">
-                <h1>
-                    <?= $stmt->fetch(PDO::FETCH_ASSOC)["subject"]; ?>
-                </h1>
-
-                <?php        
+<section class="container">
+    <?php include('navigation.php') ?>
+    <section>
+        <div class="test">
+            <h1 class="section_title">
+                <?= $stmt->fetch(PDO::FETCH_ASSOC)["subject"]; ?>
+            </h1>
+            <div>
+                    <?php
+                    $category_id_query = "SELECT
+                `topics`.`category_id`
+                FROM
+                `topics`
+                ;";
+                    $category_id = $conn->prepare($category_id_query);
+                    $category_id->execute();
+                    ?>
+                    <a href="category.php?category=<?=$category_id->fetch(PDO::FETCH_ASSOC)["category_id"]; ?>" class="button_return_to_list">Retour à la liste</a>
+                </div>
+            </div>
+            <hr class="main_line">
+                <?php
                 $stmt = $conn->prepare($replies);
                 $stmt->bindValue(':id', $_GET['topic']);
                 $stmt->execute();
@@ -69,24 +83,28 @@ if(isset($_POST['submit'])){
 
                 <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
 
-                <div class="comment" id="<?=$row[" reply_id "]?>">
-                    <p>
-                        <?=$row["content"]?>
-                    </p>
-                    <span>Auteur : <?=$row["author"]?></span>
-                </div>
+                    <div class="item_box_topics" id="<?= $row["reply_id"] ?>">
+                        <p class="item_text"><?= $row["content"] ?></p>
+                        <?php
+                        $timestamp = strtotime($row["date"]);
+                        $mois_fr = Array("", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre");
+                        list($nom_jour, $jour, $mois, $annee, $heure, $minute, $seconde) = explode('/', date("w/d/n/Y/H/i/s", $timestamp)); ?>
+
+                        <p class="additional_info_title">Ajouté par <?= $row["author"] ?></p>
+                        <p class="additional_info_detail"><?= $jour . ' ' . $mois_fr[$mois] . ' ' . $annee . ' ' ?>
+                            à<?= ' ' . $heure . ':' . $minute ?></p>
+                        <hr class="secondary_line">
+                    </div>
                 <?php endwhile;?>
 
-                <a href="./" class="btnAddTopic">Retour à la liste</a>
-
-
-                <div class="reply">
-                    <form action="" method="post">
-                        <input type="text" name="author" id="author" placeholder="Votre pseudo" value="Anonymous">
-                        <textarea name="content" id="content" placeholder="Votre message..."></textarea>
-                        <button type="submit" name="submit">Envoyer</button>
-                    </form>
-                </div>
-            </section>
-        </section>
+        <div class="add_reply_form">
+            <form action="" method="post">
+                <input class="topic_add_input" type="text" name="author" id="author" placeholder="Votre pseudo"
+                       value="Anonymous">
+                <textarea class="topic_add_text" name="content" id="content" placeholder="Votre message"></textarea>
+                <button class="button_submit_reply" type="submit" name="submit">Ajouter votre message</button>
+            </form>
+        </div>
+    </section>
+</section>
         <?php include('layouts/footer.php');?>
