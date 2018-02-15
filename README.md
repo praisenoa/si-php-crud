@@ -19,34 +19,34 @@ ChatRoom est un forum dédié aux personnes voulant communiquer et partager au s
 #### categories
 
 | Nom | Type | Extra |
-| ---------- | -- |
-|categoryid | int(11) | |
+| --- | --- | --- |
+| category_id_ | int(11) | |
 | name | varchar(30) | AUTO-INCREMENT |
 
 #### topics
 
 | Nom | Type | Extra |
-| ---------- | -- |
-|topicid | int(11) | AUTO-INCREMENT |
-|categoryid | int(11) | |
-| subject | varchar(255) | |
+| --- | --- | --- |
+| topic_id_ | int(11) | AUTO-INCREMENT |
+| category_id_ | int(11) | |
+| subjec_ | varchar(255) | |
 | date | datetime | CURRENTTIMESTAMP |
 
 #### replies
 
 | Nom | Type | Extra |
-| ---------- |
-|replyid | int(11) | AUTO-INCREMENT |
-|topicid | int(11) |  |
-|categoryid | int(11) | |
+| --- | --- | --- |
+|reply_id_ | int(11) | AUTO-INCREMENT |
+|topic_id_ | int(11) |  |
+|category_id_ | int(11) | |
 | content | text | |
 | date | datetime | CURRENTTIMESTAMP |
-| author | varchar(255) | .|
+| author | varchar(255) | |
 
 #### users
 
 | Nom | Type | Extra |
-| ---------- |
+| --- | --- | --- |
 |id | int(11) | AUTO-INCREMENT |
 |username | varchar(255) |  |
 |email | varchar(255) | |
