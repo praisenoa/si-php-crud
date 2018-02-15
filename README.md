@@ -19,28 +19,28 @@ ChatRoom est un forum dédié aux personnes voulant communiquer et partager au s
 #### categories
 
 | Nom | Type | Extra |
-| ---------- |
-|category_id | int(11) | |
+| ---------- | -- |
+|category`_`id | int(11) | |
 | name | varchar(30) | AUTO-INCREMENT |
 
 #### topics
 
 | Nom | Type | Extra |
-| ---------- |
-|topic_id | int(11) | AUTO-INCREMENT |
-|category_id | int(11) | |
+| ---------- | -- |
+|topic`_`id | int(11) | AUTO-INCREMENT |
+|category`_`id | int(11) | |
 | subject | varchar(255) | |
-| date | datetime | CURRENT_TIMESTAMP |
+| date | datetime | CURRENT`_`TIMESTAMP |
 
 #### replies
 
 | Nom | Type | Extra |
 | ---------- |
-|reply_id | int(11) | AUTO-INCREMENT |
-|topic_id | int(11) |  |
-|category_id | int(11) | |
+|reply`_`id | int(11) | AUTO-INCREMENT |
+|topic`_`id | int(11) |  |
+|category`_`id | int(11) | |
 | content | text | |
-| date | datetime | CURRENT_TIMESTAMP |
+| date | datetime | CURRENT`_`TIMESTAMP |
 | author | varchar(255) | .|
 
 #### users
