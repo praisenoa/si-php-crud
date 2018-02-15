@@ -30,7 +30,7 @@ ChatRoom est un forum dédié aux personnes voulant communiquer et partager au s
 | topic\_id | int(11) | AUTO-INCREMENT |
 | category\_id | int(11) | |
 | subject | varchar(255) | |
-| date | datetime | CURRENTTIMESTAMP |
+| date | datetime | CURRENT\_TIMESTAMP |
 
 #### replies
 
@@ -40,7 +40,7 @@ ChatRoom est un forum dédié aux personnes voulant communiquer et partager au s
 | topic\_id | int(11) |  |
 | category\_id | int(11) | |
 | content | text | |
-| date | datetime | CURRENTTIMESTAMP |
+| date | datetime | CURRENT\_TIMESTAMP |
 | author | varchar(255) | |
 
 #### users
