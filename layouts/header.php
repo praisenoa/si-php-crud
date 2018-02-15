@@ -14,20 +14,16 @@
     <body>
         <header>
             <ul class="header">
-                <li class="burger_logo">
-                    <a href="/testPHP/" class="logo">TALK</a>
-                    <div>
-                    </div>
+                <li class="logo_container">
+                    <a href="/" class="logo">TALK</a>
                 </li>
-                <li class="search">
+                <li class="searchbar_container">
                     <form action="#" method="get">
-                        <input type="text" class="search_input" maxlength="30" placeholder="Recherche (nom,catégorie ...)">
+                        <input type="text" class="searchbar_input" maxlength="30" placeholder="Recherche (nom,catégorie ...)">
                     </form>
                 </li>
-                <a href="admin" class="connect_btn">
-                    <li class="connect">
-                        <p class="connect_txt">Espace Admin</p>
-                    </li>
+                <a href="" class="btn_connect">
+                    <p class="btn_connect_txt">connexion</p>
                 </a>
             </ul>
         </header>
