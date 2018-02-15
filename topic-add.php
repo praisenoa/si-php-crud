@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     $doadd->bindValue(':author', htmlspecialchars($_POST['author']), PDO::PARAM_STR);
     $doadd->bindValue(':id', $newID, PDO::PARAM_STR);
     $doadd->execute();
-    header('Location: ./');
+    header('Location: ./topic.php?topic='.$newID);
     }
 
 }
@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
         <input class="topic_add_input" type="text" id="subject" name="subject" placeholder="Titre de la discussion">
         <textarea class="topic_add_text" id="content" name="content" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
         <div class="buttons_topic_container">
-            <button class="button_topic_return"><a href="./" style="text-decoration: none; color:black">Retour</a></button>
+            <button class="button_topic_return"><a href="./category.php?category=<?=$_GET['category']?>" style="text-decoration: none; color:black">Retour</a></button>
             <button class="button_topic_submit" name="submit" type="submit">Valider</button>
         </div>
     </form>

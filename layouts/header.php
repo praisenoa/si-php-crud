@@ -15,12 +15,10 @@
 <header>
     <ul class="header">
         <li class="logo_container">
-            <a href="/" class="logo">TALK</a>
+            <a href="/" class="logo">CHATROOM</a>
         </li>
-        <li class="searchbar_container">
-            <form action="#" method="get">
-                <input type="text" class="searchbar_input" maxlength="30" placeholder="Recherche (nom,catégorie ...)">
-            </form>
+        <li class="site_title_container">
+            <p class="site_title">Le forum des aficionados des chats</p>
         </li>
         <a href="admin" class="btn_connect">
             <p class="btn_connect_txt">connexion</p>
