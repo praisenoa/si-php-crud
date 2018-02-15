@@ -22,6 +22,10 @@
     text-decoration: none;
 }
 
+.admin_header {
+    margin-top: 20px;
+}
+
 .site_title {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
@@ -36,6 +40,32 @@
 .site_title_container {
     width: 75vw;
     height: 100%;
+}
+
+.admin_btn {
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    right: 200px;
+    width: 12.5vw;
+    vertical-align: middle;
+    position: absolute;
+}
+
+.button_add_admin {
+    text-decoration: none;
+    color:white ;
+    background-color: #f54242;
+    padding:15px 15px;
+    font-family: montserrat;
+    font-weight: 600;
+    border-radius: 1000px;
+    margin-left: calc(50% - 95.5px);
+    margin-top: 30px;
 }
 
 .btn_connect {
@@ -360,7 +390,7 @@
 }
 
 .button_connect {
-    background-color: #42A5F5;
+    background-color: #f54242;
     font-family: montserrat;
     font-weight: 600;
     color: white;
@@ -459,12 +489,17 @@
     margin-top: 30px;
 }
 
+
 .btnLogout{
     position: absolute;
     right: 0;
     color: #fff;
     text-decoration: none;
     padding: 20px 40px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
 }
 
 .btnLogout:hover{

@@ -16,7 +16,7 @@ $allCategoriesQuery->execute();
 ?>
 <div class="admin containerlevrai">
 
-    <h1 class="title">Gestions des Catégories</h1>
+    <h1 class="section_title">Gestion des Catégories</h1>
 
     <table class="table_topics">
         <tr>
@@ -40,8 +40,9 @@ $allCategoriesQuery->execute();
         </tr>
         <?php endwhile;?>
     </table>
-    
-    <a href="addCategory.php">Créer une catégorie</a>
+    <div style="margin-top: 40px">
+    <a class="button_add_admin" href="addCategory.php">Créer une catégorie</a>
+    </div>
 </div>
 
 <?php include('layouts/footer.php');?>

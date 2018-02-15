@@ -14,13 +14,13 @@
     <body>
         <header>
             <ul class="header" style="background: linear-gradient(to right, #f54242, #d21919);">
-                <li class="burger_logo">
-                    <a href="/testPHP/admin" class="logo">TALK</a>
+                <li class="admin_header">
+                    <a href="/testPHP/admin" class="logo">CHATROOM</a>
                 </li>
-                <li><a class="btnbackWebsite" href="../">Accéder au site</a></li>
+                <li class="admin_header"><a class="admin_btn" href="../">Accéder au site</a></li>
                 <?php                    
                     if(isset($_SESSION['login'])) {
-                        echo '<li><a class="btnLogout" href="logout.php">Se déconnecter</a></li>';                        
+                        echo '<li><a class="btnLogout" href="logout.php">Se déconnecter</a></li>';
                      }
                 ?> 
             </ul>
