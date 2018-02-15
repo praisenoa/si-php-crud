@@ -23,7 +23,7 @@ $allCategoriesQuery->execute();
                     <th>Name</th>
                 </tr>
                 <?php while (false !== $row = $allCategoriesQuery->fetch(PDO::FETCH_ASSOC)) :?>
-                <h1 class="title">Editer la catégorie : <?=$row['name']?></h1>
+                <h1 class="section_title">Editer la catégorie : <?=$row['name']?></h1>
                 <tr>
                     <td>
                         <?=$row["category_id"]?>
@@ -77,7 +77,7 @@ $allCategoriesQuery->execute();
         $allTopicsQuery->execute();
         ?>
 
-        <h1 class="title">Topics de la catégorie</h1>
+        <h1 class="section_title">Topics de la catégorie</h1>
 
         <table class="table_topics">
             <tr>

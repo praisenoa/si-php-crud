@@ -11,7 +11,7 @@
                 <th>Name</th>
             </tr>
 
-            <h1 class="title">Créer une catégorie :</h1>
+            <h1 class="section_title">Créer une catégorie :</h1>
             <tr>
                 <td>
                     <input class="nameCategory" type="text" name="name" placeholder="Entrez le nom de la nouvelle catégorie (30 caractères max.)">

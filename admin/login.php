@@ -3,7 +3,7 @@
 
 
 <div class="containerlevrai">
-   <h1>Connexion au panel Admin</h1>
+   <h1 class="section_title">Connexion au panel Admin</h1>
     <form action="" method="post">
         <input class="topic_add_input" type="text" name="username" placeholder="Pseudo">
         <input class="topic_add_input" type="password" name="password" placeholder="Mot de passe">

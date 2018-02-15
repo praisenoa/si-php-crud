@@ -24,7 +24,7 @@ $allCategoriesQuery->execute();
                 <th>Name</th>
             </tr>
             <?php while (false !== $row = $allCategoriesQuery->fetch(PDO::FETCH_ASSOC)) :?>
-            <h1 class="title">Supprimer la catégorie : <?=$row['name']?></h1>
+            <h1 class="section_title">Supprimer la catégorie : <?=$row['name']?></h1>
             <tr>
                 <td>
                     <?=$row["category_id"]?>
