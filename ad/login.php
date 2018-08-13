@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
         $login_query = "SELECT
             `username`,
             `password`,
-            `admin`
+            `ad`
             FROM
             `users`
             WHERE

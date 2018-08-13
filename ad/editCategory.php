@@ -88,6 +88,7 @@ $allCategoriesQuery->execute();
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
+
             <?php while (false !== $row = $allTopicsQuery->fetch(PDO::FETCH_ASSOC)) :?>
             <tr>
                 <td>
@@ -116,5 +117,3 @@ $allCategoriesQuery->execute();
             <?php endwhile;?>
         </table>
     </div>
-
-    <?php include('layouts/footer.php');?>

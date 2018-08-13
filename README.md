@@ -235,7 +235,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `admin`) VALUES
-(1, 'admin', 'admin@mail.com', 'admin', 1);
+(1, ad, ad, ad, 1);
 
 --
 -- Contraintes pour les tables déchargées
